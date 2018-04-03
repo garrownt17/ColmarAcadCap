@@ -1,1 +1,76 @@
 /* Stylesheet for capstone (Colmar Acad) */
+
+html	{
+	font-size: 16px;
+	font-family: Helvetica, sans-serif;
+}
+
+.upper	{
+	text-transform: uppercase;
+}
+
+/* Header */
+header	{
+	height: 4rem;
+	background-color: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo	{
+	display: inline-flex;
+	align-items: center;
+	margin-left: 1.5rem;
+	font-size: 2rem;
+}
+
+.logo h2	{
+	word-spacing: -.5rem;
+}
+
+header nav	{
+	margin-right: 1.5rem;
+}
+
+header nav ul li 	{
+	text-decoration: none;
+	display: inline-block;
+	margin: 0 .35rem;
+}
+
+@media only screen and (max-width: 750px)	{
+	
+}
+
+/* Learn Something New */
+#learn-something	{
+	height: 25rem;
+	background-color: lightgray;
+}
+
+
+/* ...Keep Practicing */
+#practicing	{
+	height: 25rem;
+	background-color: white;
+}
+
+
+/* Start Learning */
+#start-learning	{
+	height: 25rem;
+	background-color: lightgray;
+}
+
+
+/* Thesis Exhibit */
+#theses	{
+	height: 25rem;
+	background-color: white;
+}
+
+
+footer	{
+	
+}
