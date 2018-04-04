@@ -9,6 +9,54 @@ html	{
 	text-transform: uppercase;
 }
 
+.sect-title	{
+	display: block;
+	font-size: 3rem;
+	font-weight: 900;
+	margin-bottom: 2rem;
+	line-height: 3.4rem;
+}
+
+.sect-content	{
+	display: block;
+	font-size: 1.75rem;
+	line-height: 2.3rem;
+	margin-bottom: 2rem;
+}
+
+.button	{
+	color: white;
+	background-color: darkblue;
+	font-size: 1.4rem;
+	border-radius: 5px;
+}
+
+@media only screen and (max-width: 1250px)	{
+	.sect-title	{
+		font-size: 2.7rem;
+		line-height: 2.2rem;
+	}
+	
+	.sect-content	{
+		font-size: 2rem;
+		line-height: 1.9rem;
+		font-weight: 500;
+	}
+}
+
+@media only screen and (max-width: 1000px)	{
+	.sect-title	{
+		font-size: 2.2rem;
+		line-height: 2rem;
+	}
+	
+	.sect-content	{
+		font-size: 1.25rem;
+		line-height: 1.6rem;
+
+	}
+}
+
 /* Header */
 header	{
 	height: 4rem;
@@ -39,16 +87,39 @@ header nav ul li 	{
 	margin: 0 .35rem;
 }
 
-@media only screen and (max-width: 750px)	{
+@media only screen and (max-width: 950px)	{
 	
 }
 
 /* Learn Something New */
 #learn-something	{
-	height: 25rem;
 	background-color: lightgray;
+	display: flex;
+		align-items: center;
 }
 
+#learn-something img	{
+	width: 60%;
+	max-width: 800px;
+	margin: 2rem 1.5rem;
+	float: left;
+}
+
+#learn-something .content	{
+	width: 30%;
+	display: flex;
+	align-items: space-around;
+	flex-direction: column;
+}
+
+#learn-something .button	{
+	display: flex;
+		justify-content: center;
+		align-items: center;
+	margin: .25rem auto;
+	height: 3rem;
+	width: 100%;
+}
 
 /* ...Keep Practicing */
 #practicing	{
