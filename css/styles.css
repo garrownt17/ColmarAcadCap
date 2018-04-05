@@ -230,6 +230,10 @@ header nav ul li 	{
 		width: 85%;
 		margin:2rem 1rem;
 	}
+	
+	.pic-format	{
+		width: 100%;
+	}
 }
 
 /* ...Keep Practicing */
