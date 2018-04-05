@@ -8,11 +8,11 @@
 
 <body>
 	<header>
-		<div class="logo">
+		<div class="logo small-hide">
 			<img src="./images/ic-logo.svg">
 			<h2 class="upper"><b>Colmar</b> Academy</h2>
 		</div>
-		<nav>
+		<nav class="small-hide">
 			<ul>
 				<li>On Campus</li>
 				<li>Online</li>
@@ -20,9 +20,16 @@
 				<li>Sign In</li>
 			</ul>
 		</nav>
+		<div class="mini-header">
+			<img src="./images/ic-logo.svg">
+			<img src="./images/ic-on-campus.svg">
+			<img src="./images/ic-online.svg">
+			<img src="./images/ic-login.svg">
+		</div>
 	</header>
+	<main>
 	<section id="learn-something">
-		<img src="./images/banner.jpg">
+		<img src="./images/banner.jpg" class="pic-format">
 		<div class="content">
 			<h1 class="sect-title">Learn something new everyday</h1>
 			<h4 class="sect-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
@@ -30,16 +37,150 @@
 		</div>
 	</section>
 	<section id="practicing">
-	
+		<div class="main-art">
+			<img src="./images/information-main.jpg" class="pic-format">
+			<article>
+				<h2 class="sect-title">It doesn't hurt to keep practicing</h2>
+				<p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
+				<h6 class="citation">Emanuel, Sr Strategist at Hiring.com</h6>
+			</article>
+		</div>
+		<div class="side-art">
+			<div class="sub-art">
+				<img src="./images/information-orientation.jpg" class="sub-art-pic small-hide">
+				<img src="./images/information-orientation-mobile.jpg" class="sub-art-pic small-show">
+				<article class="sub-art-content">
+					<h4 class="sub-art-title">Orientation date</h4>
+					<h6 class="sub-art-desc">Tue 10/11 & Wed 10/12: 8am-3pm</h6>
+					<a href=""><h6>Read more</h6></a>
+				</article>
+			</div>
+			<div class="sub-art">
+				<img src="./images/information-campus.jpg" class="sub-art-pic small-hide">
+				<img src="./images/information-campus-mobile.jpg" class="sub-art-pic small-show">
+				<article class="sub-art-content">
+					<h4 class="sub-art-title"> Our campus</h4>
+					<h6 class="sub-art-desc">Find which campus is close by you</h6>
+					<a href=""><h6>Read more</h6></a>
+				</article>
+			</div>
+			<div class="sub-art">
+				<img src="./images/information-guest-lecture.jpg" class="sub-art-pic small-hide">
+				<img src="./images/information-guest-lecture-mobile.jpg" class="sub-art-pic small-show">
+				<article class="sub-art-content">
+					<h4 class="sub-art-title">Our guest lecture</h4>
+					<h6 class="sub-art-desc"> join a keynote with Oliver Sack about music in medical treatment</h6>
+					<a href=""><h6>Read more</h6></a>
+				</article>
+			</div>
+		</div>
 	</section>
 	<section id="start-learning">
-	
+		<h1 class="sect-title">Start Learning</h1>
+		<div class="program-overview">
+			<div class="program">
+				<div class="program-pic">
+					<img src="./images/course-software.jpg">
+				</div>
+				<div class="program-courses">
+					<h3 class="small-show">Software Engineering</h3>
+					<h4>Courses</h4>
+					<h5>Web Development, Mobile Development, iOT, APIs</h5>
+				</div>
+			</div>
+			<div class="program">
+				<div class="program-pic">
+					<img src="./images/course-computer-art.jpg">
+				</div>
+				<div class="program-courses">
+					<h3>Computer Art</h3>
+					<h4>Courses</h4>
+					<h5>Imaging &amp; Design, Web Design, Motion Graphics &amp; Visual Effects, Computer Animation</h5>
+				</div>
+			</div>
+			<div class="program">
+				<div class="program-pic">
+					<img src="./images/course-design.jpg">
+				</div>
+				<div class="program-courses">
+					<h3>Design</h3>
+					<h4>Courses</h4>
+					<h5>User Experience Design, User Research, Visual Design</h5>
+				</div>
+			</div>
+			<div class="program">
+				<div class="program-pic">
+					<img src="./images/course-data.jpg">
+				</div>
+				<div class="program-courses">
+					<h3>Data</h3>
+					<h4>Courses</h4>
+					<h5>Data Science, Big Data, SQL, Data Visualization</h5>
+				</div>
+			</div>
+			<div class="program">
+				<div class="program-pic">
+					<img src="./images/course-business.jpg">
+				</div>
+				<div class="program-courses">
+					<h3>Business</h3>
+					<h4>Courses</h4>
+					<h5>Product Development, Business Development, Startup</h5>
+				</div>
+			</div>
+			<div class="program">
+				<div class="program-pic">
+					<img src="./images/course-marketing.jpg">
+				</div>
+				<div class="program-courses">
+					<h3>Marketing</h3>
+					<h4>Courses</h4>
+					<h5>Analytics, Content Marketing, Mobile Marketing</h5>
+				</div>
+			</div>
+			<div class="small-show">
+				<h3>Software engineering</h3>
+				<h3>Computer art</h3>
+				<h3>Design</h3>
+				<h3>Data</h3>
+				<h3>Business</h3>
+				<h3>Marketing</h3>
+			</div>
+		</div>
 	</section>
 	<section id="theses">
-	
+		<h1 class="sect-title">Thesis exhibit</h1>
+		<div class="theses-content">
+			<div class="main-art">
+				<video src="./videos/thesis.mp4" type="video/mp4" controls class="vid-format"></video>
+				<div>
+					<h3>Reimagine urban</h3>
+					<p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
+				</div>
+			</div>
+			<div class="side-art small-hide">
+				<div class="sub-art">
+					<img src="./images/thesis-fisma.jpg" class="sub-art-pic">
+					<article class="sub-art-content">
+						<h4 class="sub-art-title">Fisma: Design and Prototype</h4>
+						<h6 class="sub-art-desc">Designer showcase of new prototype products</h6>
+					</article>
+				</div>
+				<div class="sub-art">
+					<img src="./images/thesis-now-and-then.jpg" class="sub-art-pic">
+					<article class="sub-art-content">
+						<h4 class="sub-art-title">Now and then</h4>
+						<h6 class="sub-art-desc">Research study about New York</h6>
+					</article>
+				</div>
+			</div>
+			<video src="./videos/thesis.mp4" type="video/mp4" height="auto" controls class="small-vid"></video>
+		</div>
 	</section>
+	</main>
 	<footer>
-	
+		<h5>&copy; Colmar Academy. All rights reserved</h5>
+		<h5 class="small-hide" style="font-weight:bold;">Terms Privacy</h5>
 	</footer>
 </body>
 </html>

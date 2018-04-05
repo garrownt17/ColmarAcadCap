@@ -3,6 +3,44 @@
 html	{
 	font-size: 16px;
 	font-family: Helvetica, sans-serif;
+	color: dimgray;
+}
+
+main	{
+	margin: 0 auto;
+}
+h1	{
+	font-size: 3rem;
+	font-weight: 900;
+}
+
+h2	{
+	font-size: 2.5rem;
+	font-weight: 750;
+}
+
+h3	{
+	font-size: 2rem;
+	font-weight: 600;
+}
+
+h4	{
+	font-size: 1.75rem;
+	font-weight: 500;
+}
+
+h5	{
+	font-size: 1.25rem;
+	font-weight: 400;
+}
+
+h6	{
+	font-size: .75rem;
+	font-weight: 300;
+}
+
+b 	{
+	font-weight: bold;
 }
 
 .upper	{
@@ -11,30 +49,56 @@ html	{
 
 .sect-title	{
 	display: block;
-	font-size: 3rem;
-	font-weight: 900;
 	margin-bottom: 2rem;
 	line-height: 3.4rem;
+	color: darkslategray;
 }
 
 .sect-content	{
 	display: block;
-	font-size: 1.75rem;
 	line-height: 2.3rem;
 	margin-bottom: 2rem;
 }
 
 .button	{
 	color: white;
-	background-color: darkblue;
+	background-color: lightslategray;
 	font-size: 1.4rem;
 	border-radius: 5px;
 }
 
+.citation	{
+	font-style: italic;
+	font-size: .75rem;
+}
+
+.pic-format	{
+	width: 60%;
+	max-width: 800px;
+	margin: 2rem 3rem;
+}
+
+.vid-format	{
+	width: 100%;
+	max-width: 800px;
+	margin: 2rem 3rem;
+}
+
+	.small-show	{
+		display: none;
+	}
+	
+	.small-hide	{
+		display: initial;
+	}
+
 @media only screen and (max-width: 1250px)	{
+	.main	{
+		width: 100%;
+	}
 	.sect-title	{
-		font-size: 2.7rem;
-		line-height: 2.2rem;
+		font-size: 2.5rem;
+		line-height: 2.4rem;
 	}
 	
 	.sect-content	{
@@ -52,9 +116,21 @@ html	{
 	
 	.sect-content	{
 		font-size: 1.25rem;
-		line-height: 1.6rem;
+		line-height: 2rem;
 
 	}
+}
+
+@media only screen and (max-width: 600px)	{
+	.sect-title	{
+		font-size: 2rem;
+		line-height: 2.5rem;
+	}
+	
+	.pic-format	{
+		width: 100%;
+	}
+	
 }
 
 /* Header */
@@ -70,13 +146,18 @@ header	{
 	display: inline-flex;
 	align-items: center;
 	margin-left: 1.5rem;
-	font-size: 2rem;
 }
 
 .logo h2	{
-	word-spacing: -.5rem;
+	word-spacing: -.35rem;
+	color: black;
+	font-size: 1.75rem;
+	font-weight: 500;
 }
 
+.logo img	{
+	height: 2.5rem;
+}
 header nav	{
 	margin-right: 1.5rem;
 }
@@ -87,22 +168,34 @@ header nav ul li 	{
 	margin: 0 .35rem;
 }
 
-@media only screen and (max-width: 950px)	{
+.mini-header	{
+	display: none;
+}
+@media only screen and (max-width: 600px)	{
 	
+	.mini-header	{
+		display: initial;
+		width: 100%;
+		margin: 0 .75rem;
+		display: flex;
+			justify-content: space-between;
+	}
+	
+	.small-hide	{
+		display: none;
+	}
+	
+	.logo	{
+		display: none;
+	}
 }
 
 /* Learn Something New */
 #learn-something	{
+	width: 100%;
 	background-color: lightgray;
 	display: flex;
 		align-items: center;
-}
-
-#learn-something img	{
-	width: 60%;
-	max-width: 800px;
-	margin: 2rem 1.5rem;
-	float: left;
 }
 
 #learn-something .content	{
@@ -121,27 +214,258 @@ header nav ul li 	{
 	width: 100%;
 }
 
-/* ...Keep Practicing */
-#practicing	{
-	height: 25rem;
-	background-color: white;
+@media only screen and (max-width: 600px)	{
+	#learn-something	{
+		flex-direction: column;
+		width: 100%;
+	}
+	
+	#learn-something .content	{
+		width: 85%;
+		margin:2rem 1rem;
+	}
 }
 
+/* ...Keep Practicing */
+#practicing	{
+	background-color: white;
+	display: flex;
+	width: 100%;
+}
+
+.main-art	{
+	width: 60%;
+	max-width: 800px;
+	margin: 0 2rem 2rem 3rem;
+}
+
+.main-art img	{
+	width: 100%;
+	margin: 2rem 1.5rem 2rem 0;
+}
+
+.main-art p	{
+	margin: .25rem 0 2rem;
+	line-height: 1.25rem;
+	color: darkgray;
+	width: 90%;
+}
+
+.side-art	{
+	width: 40%;
+	display: flex;
+		flex-direction: column;
+	margin-top: 2rem;
+}
+
+.sub-art	{
+	width: 90%;
+	border: .075rem solid lightgray;
+	display: flex;
+		align-items: center;
+}
+
+	.sub-art:hover	{
+		background-color: lightgray;
+		
+	}
+
+	.sub-art-content a	{
+		text-decoration: none;
+		color: darkblue;
+	}
+	
+	
+	.sub-art-content a h6	{
+		font-weight: 700;
+	}
+
+	.sub-art-pic	{
+		width: 35%;
+			max-width: 175px;
+		height: auto;
+		margin: 1rem 1rem;
+	}
+
+	.sub-art-title	{
+		margin-bottom: .5rem;
+		
+	}
+
+	.sub-art-desc	{
+		margin-bottom: .5rem;
+		line-height: 1.125rem;
+	}
+
+@media only screen and (max-width: 1250px)	{
+
+}
+
+@media only screen and (max-width: 1000px)	{
+
+}
+
+@media only screen and (max-width: 600px)	{
+	#practicing	{
+		background-color: white;
+		border-top: .025rem lightgray solid;
+		border-bottom: .025rem lightgray solid;
+	}
+	
+	.main-art	{
+		display: none;
+	}
+	
+	.side-art	{
+		width: 100%;
+		align-items: center;
+	}
+	
+	.sub-art	{
+		border: none;
+		width: 100%;
+		flex-direction: column;
+		margin: 1rem 0;
+	}
+	
+	.sub-art-pic, .sub-art-content	{
+		width: 80%;
+		max-width: none;
+	}
+}
 
 /* Start Learning */
 #start-learning	{
-	height: 25rem;
 	background-color: lightgray;
+	display: flex;
+	flex-direction: column;
 }
 
+#start-learning .sect-title	{
+	margin: 2rem auto;
+}
+
+.program-overview	{
+	display: flex;
+		align-items: space-around;
+		justify-content: space-around;
+		flex-wrap: wrap;
+	width: 90%;
+	margin:0 auto 2rem;
+}
+
+.program	{
+	background-color: white;
+	border: .25rem solid lightgray;
+	margin: 1rem 1rem;
+	height: 25rem;
+	width: 25rem;
+}
+
+.program img {
+	width: 100%;
+	height: auto;
+}
+
+.program:hover	{
+	border: .25rem solid gray;
+}
+
+.program-courses	{
+	width: 90%;
+	height: 40%;
+	display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+	margin: 1rem 1rem 1.5rem;
+}
+
+.small-show	{
+	display: none;
+}
+
+@media only screen and (max-width: 600px)	{
+	#start-learning	{
+		background-color: white;
+		border-top: .025rem lightgray solid;
+		border-bottom: .025rem lightgray solid;
+	}
+	.program	{
+		display: none;
+	}
+	
+	.program-pic	{
+		display: none;
+	}
+	
+	.small-show	{
+		display: initial;
+	}
+	
+	.small-show h3	{
+		padding: 1.1rem 1rem;
+		margin: .25rem auto;
+		border-radius: 5px;
+		background-color: lightgray;
+	}
+}
 
 /* Thesis Exhibit */
 #theses	{
-	height: 25rem;
 	background-color: white;
+	display: flex;
+		flex-direction: column;
+		align-items: center;
+	width: 100%;
 }
 
+#theses .sect-title	{
+	margin: 2rem auto;
+}
+
+.theses-content	{
+	display: flex;
+	width: 100%;
+}
+
+.theses-content .side-art	{
+	margin-top:1rem;
+}
+video.vid-format	{
+	width: 100%;
+	margin: 1rem 1.5rem 0 0;
+	height: auto;
+}
+
+.main-art div h3	{
+	margin: 1rem 0;
+}
+
+.small-show, .small-vid	{
+		display: none;
+	}
+
+@media only screen and (max-width: 600px)	{
+	.small-hide	{
+		display: none;
+	}
+	
+	.small-vid	{
+		display: initial;
+		width: 100%;
+		height: 100%;
+		margin: 1rem 0;
+	}
+	
+	.small-show	{
+		display: initial;
+	}
+}
 
 footer	{
-	
+	opacity: .6;
+	display: flex;
+	justify-content: space-between;
+	padding: 1rem 1.5rem 3rem;
+	border-top: .2rem solid gray;
 }
