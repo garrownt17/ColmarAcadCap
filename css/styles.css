@@ -3,7 +3,7 @@
 html	{
 	font-size: 16px;
 	font-family: Helvetica, sans-serif;
-	color: dimgray;
+	color: darkslategray;
 }
 
 main	{
@@ -51,7 +51,6 @@ b 	{
 	display: block;
 	margin-bottom: 2rem;
 	line-height: 3.4rem;
-	color: darkslategray;
 }
 
 .sect-content	{
@@ -67,6 +66,10 @@ b 	{
 	border-radius: 5px;
 }
 
+.button:hover	{
+	background-color: darkslategray;
+}
+
 .citation	{
 	font-style: italic;
 	font-size: .75rem;
@@ -75,7 +78,7 @@ b 	{
 .pic-format	{
 	width: 60%;
 	max-width: 800px;
-	margin: 2rem 3rem;
+	margin: 2rem 2rem 2rem 3rem;
 }
 
 .vid-format	{
@@ -84,18 +87,19 @@ b 	{
 	margin: 2rem 3rem;
 }
 
-	.small-show	{
-		display: none;
-	}
-	
-	.small-hide	{
-		display: initial;
-	}
 
+.small-show	{
+	display: none;
+}
+	
+.small-hide	{
+	display: initial;
+}
 @media only screen and (max-width: 1250px)	{
 	.main	{
 		width: 100%;
 	}
+	
 	.sect-title	{
 		font-size: 2.5rem;
 		line-height: 2.4rem;
@@ -110,15 +114,16 @@ b 	{
 
 @media only screen and (max-width: 1000px)	{
 	.sect-title	{
-		font-size: 2.2rem;
+		font-size: 2rem;
 		line-height: 2rem;
+		font-weight: 800;
 	}
 	
 	.sect-content	{
 		font-size: 1.25rem;
 		line-height: 2rem;
-
 	}
+	
 }
 
 @media only screen and (max-width: 600px)	{
@@ -130,7 +135,6 @@ b 	{
 	.pic-format	{
 		width: 100%;
 	}
-	
 }
 
 /* Header */
@@ -171,7 +175,26 @@ header nav ul li 	{
 .mini-header	{
 	display: none;
 }
-@media only screen and (max-width: 600px)	{
+
+@media only screen and (max-width: 1000px)	{
+	header nav	{
+		margin-right:1rem;
+	}
+	
+	.mini-header	{
+		display: none;
+	}
+	
+	.mini-header img	{
+		height: 3rem;
+	}
+	
+	.small-show	{
+		display: initial;
+	}
+}
+
+@media only screen and (max-width: 750px)	{
 	
 	.mini-header	{
 		display: initial;
@@ -181,12 +204,22 @@ header nav ul li 	{
 			justify-content: space-between;
 	}
 	
+	.large-header	{
+		display: none;
+	}
+	
 	.small-hide	{
 		display: none;
 	}
 	
 	.logo	{
 		display: none;
+	}
+}
+
+@media only screen and (max-width: 600px)	{
+	.mini-header img	{
+		height: 2rem;
 	}
 }
 
@@ -217,6 +250,12 @@ header nav ul li 	{
 @media only screen and (max-width: 1000px)		{
 	.pic-format	{
 		width: 55%;
+	}
+	
+	#learn-something .button	{
+		margin: .25rem auto;
+		height: 2.5rem;
+		font-size: 1.2rem;
 	}
 }
 
@@ -307,12 +346,49 @@ header nav ul li 	{
 		line-height: 1.125rem;
 	}
 
+.mini-pic	{
+	display: none;
+}
 @media only screen and (max-width: 1250px)	{
 
 }
 
 @media only screen and (max-width: 1000px)	{
-
+	#practicing	{
+		flex-direction: column;
+	}
+	.main-art	{
+		width: 90%;
+	}
+	
+	.side-art	{
+		width: 90%;
+		flex-direction: row;
+		margin: 0 auto 2rem;
+	}
+	
+	.sub-art	{
+		width: 90%;
+		flex-direction: column;
+		margin: 0 auto;
+		align-items: flex-start;
+	}
+	
+	.sub-art-pic, .sub-art-content	{
+		width: 90%;
+		max-width: none;
+		margin: 0 auto .25rem;
+	}
+	
+	.small-hide	{
+		display: none;
+	}
+	
+	.mini-pic	{
+		display: initial;
+		width: 90%;
+		margin: 1rem auto;
+	}
 }
 
 @media only screen and (max-width: 600px)	{
@@ -329,18 +405,29 @@ header nav ul li 	{
 	.side-art	{
 		width: 100%;
 		align-items: center;
+		margin: .25rem auto;
 	}
 	
 	.sub-art	{
 		border: none;
 		width: 100%;
 		flex-direction: column;
-		margin: 1rem 0;
+		align-items: center;
+		margin: 0 ;
 	}
 	
 	.sub-art-pic, .sub-art-content	{
-		width: 80%;
+		width: 90%;
 		max-width: none;
+	}
+	
+	.sub-art-pic	{
+		margin: 0 1rem;
+	}
+	
+	.sub-art-content	{
+		
+		margin: 1rem 1rem 3rem;
 	}
 }
 
@@ -394,6 +481,15 @@ header nav ul li 	{
 	display: none;
 }
 
+@media only screen and (max-width: 1000px)	{
+.program	{
+	background-color: white;
+	border: .25rem solid lightgray;
+	margin: 1rem 1rem;
+	height: 20rem;
+	width: 15rem;
+}
+}
 @media only screen and (max-width: 600px)	{
 	#start-learning	{
 		background-color: white;
