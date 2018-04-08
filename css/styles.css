@@ -1,14 +1,60 @@
 /* Stylesheet for capstone (Colmar Acad) */
 
-html	{
-	font-size: 16px;
-	font-family: Helvetica, sans-serif;
-	color: darkslategray;
+/*Playfair Display SC*/
+@font-face {
+  font-family: 'Playfair Display SC';
+  font-style: italic;
+  font-weight: 900;
+  src: local('Playfair Display SC Black Italic'), local('PlayfairDisplaySC-BlackItalic'), url(https://fonts.gstatic.com/s/playfairdisplaysc/v7/ke82OhoaMkR6-hSn7kbHVoFf7ZfgMPr_lbw0kcwnLKoQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-main	{
-	margin: 0 auto;
+@font-face {
+  font-family: 'Playfair Display SC';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Playfair Display SC Black'), local('PlayfairDisplaySC-Black'), url(https://fonts.gstatic.com/s/playfairdisplaysc/v7/ke80OhoaMkR6-hSn7kbHVoFf7ZfgMPr_nTorBcwXLg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+
+/*Ubuntu type-face*/
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Ubuntu Italic'), local('Ubuntu-Italic'), url(https://fonts.gstatic.com/s/ubuntu/v11/4iCu6KVjbNBYlgoKej70l0k.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ubuntu Regular'), local('Ubuntu-Regular'), url(https://fonts.gstatic.com/s/ubuntu/v11/4iCs6KVjbNBYlgoKfw72.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Ubuntu Medium'), local('Ubuntu-Medium'), url(https://fonts.gstatic.com/s/ubuntu/v11/4iCv6KVjbNBYlgoCjC3jsGyN.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+html	{
+	font-size: 16px;
+	font-family: Ubuntu, Helvetica, sans-serif;
+	color: #333;
+	background-color: rgba(0,0,110,.8);	
+}
+
+main, footer	{
+	margin: 0 auto;
+	position: relative;
+		top: 4rem;
+}
+
 h1	{
 	font-size: 3rem;
 	font-weight: 900;
@@ -47,10 +93,43 @@ b 	{
 	text-transform: uppercase;
 }
 
+#practicing, #start-learning, #theses	{
+	background-color: #DDD;
+	z-index: 2;
+}
+
+/*University Colors*/
+.navy	{
+	color: rgb(0,0,110);
+}
+
+.navy-back	{
+	background-color: rgba(0,0,110,.25);
+}
+
+.gold	{
+	color: rgb(232,208,0);
+}
+
+.gold-back	{
+	background-color: rgba(232,208,0,.75);
+}
+
+.white	{
+	color: #DDD;
+}
+
+.white-back	{
+	background-color: #DDD;;
+}
+
+
 .sect-title	{
 	display: block;
 	margin-bottom: 2rem;
 	line-height: 3.4rem;
+	font-family: 'PlayfairDisplaySC-Black', serif;
+	color: rgb(0,0,110);
 }
 
 .sect-content	{
@@ -61,13 +140,12 @@ b 	{
 
 .button	{
 	color: white;
-	background-color: lightslategray;
 	font-size: 1.4rem;
 	border-radius: 5px;
 }
 
 .button:hover	{
-	background-color: darkslategray;
+	background-color: rgb(232,208,0);
 }
 
 .citation	{
@@ -78,7 +156,6 @@ b 	{
 .pic-format	{
 	width: 60%;
 	max-width: 800px;
-	margin: 2rem 2rem 2rem 3rem;
 }
 
 .vid-format	{
@@ -101,12 +178,10 @@ b 	{
 	}
 	
 	.sect-title	{
-		font-size: 2.5rem;
 		line-height: 2.4rem;
 	}
 	
 	.sect-content	{
-		font-size: 2rem;
 		line-height: 1.9rem;
 		font-weight: 500;
 	}
@@ -114,22 +189,27 @@ b 	{
 
 @media only screen and (max-width: 1000px)	{
 	.sect-title	{
-		font-size: 2rem;
-		line-height: 2rem;
+		line-height: 2.3rem;
 		font-weight: 800;
+		font-size: 250%;
 	}
 	
 	.sect-content	{
-		font-size: 1.25rem;
-		line-height: 2rem;
+		line-height: 1.8rem;
+		font-size: 150%;
 	}
 	
 }
 
 @media only screen and (max-width: 600px)	{
+	main	{
+		font-size: 60%;
+	}
+	
 	.sect-title	{
 		font-size: 2rem;
 		line-height: 2.5rem;
+		font-family: 'Playfair Display SC', serif;
 	}
 	
 	.pic-format	{
@@ -139,46 +219,88 @@ b 	{
 
 /* Header */
 header	{
-	height: 4rem;
-	background-color: white;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	width: 100%;
+	background-color: rgb(0,0,110);	
+	font-family: 'PlayfairDisplaySC-Black', serif;
+	border-bottom: .5rem solid black;
+	position: fixed;
+	z-index: 100;
 }
 
 .logo	{
+	height: 3rem;
+	position: relative;
 	display: inline-flex;
-	align-items: center;
-	margin-left: 1.5rem;
-}
-
-.logo h2	{
-	word-spacing: -.35rem;
-	color: black;
-	font-size: 1.75rem;
+		align-items: center;
+		justify-content: center;
+	color: rgb(221,221,221);
+	margin-top: .5rem;
+	font-size: 3.75rem;
 	font-weight: 500;
 }
 
 .logo img	{
-	height: 2.5rem;
-}
-header nav	{
-	margin-right: 1.5rem;
+	height: 2.75rem;
+	width: 2.75rem;
 }
 
-header nav ul li 	{
-	text-decoration: none;
-	display: inline-block;
-	margin: 0 .35rem;
+.logo h2	{
+	word-spacing: -.35rem;
+	
+}
+
+header nav	{
+	display: flex;
+		justify-content: space-between;
+		align-items: center;
+}
+
+header nav div	{
+	margin: 1rem;
+	display: flex;
+	align-items: center;
+}
+
+.logo, .left-head, .right-head	{
+		width: 33%;
+		text-align: center;
+	}
+
+nav div h4	{
+	margin: 0 3rem;
+	padding: .2rem;
+}
+
+header h4:hover	{
+	background-color: rgba(232,208,0,.9);
+	color: rgb(0,0,110);
+	border-radius: 2px;
 }
 
 .mini-header	{
 	display: none;
 }
 
-@media only screen and (max-width: 1000px)	{
+@media only screen and (max-width: 1400px)	{
 	header nav	{
-		margin-right:1rem;
+		font-size: 1.2rem;
+	}
+}
+
+@media only screen and (max-width: 1000px)	{
+	nav div h4	{
+		font-size: 1.2rem;
+		margin: 0 1.75rem;
+	}
+	
+	.logo	{
+		display: flex;
+			align-items: center;
+			justify-content: center;
+	}
+	
+	.logo h2	{
+		font-size: 1.75rem;
 	}
 	
 	.mini-header	{
@@ -186,7 +308,7 @@ header nav ul li 	{
 	}
 	
 	.mini-header img	{
-		height: 3rem;
+		height: 2rem;
 	}
 	
 	.small-show	{
@@ -198,10 +320,12 @@ header nav ul li 	{
 	
 	.mini-header	{
 		display: initial;
-		width: 100%;
-		margin: 0 .75rem;
+		width: 90%;
+		height: 4rem;
+		margin: 0 auto;
 		display: flex;
 			justify-content: space-between;
+			align-items: center;
 	}
 	
 	.large-header	{
@@ -226,60 +350,115 @@ header nav ul li 	{
 /* Learn Something New */
 #learn-something	{
 	width: 100%;
-	background-color: lightgray;
+	height: 50rem;
 	display: flex;
-		align-items: center;
+		align-items: space-between;
+	background-image: url('../images/banner.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: rgb(0,0,110);
+	
 }
 
 #learn-something .content	{
-	width: 30%;
+	width: 33%;
+	height: 20rem;
+	position: relative;
+		left: 3rem;
+		top: 25rem;
 	display: flex;
-	align-items: space-around;
-	flex-direction: column;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	padding: 1rem 1.75rem;
+	background-color: rgba(221,221,221,.7);
+	border-radius: 10px;
 }
 
-#learn-something .button	{
+.button	{
 	display: flex;
 		justify-content: center;
 		align-items: center;
-	margin: .25rem auto;
+	margin: .25rem auto 1rem;
 	height: 3rem;
-	width: 100%;
+	width: 80%;
 }
 
-@media only screen and (max-width: 1000px)		{
-	.pic-format	{
-		width: 55%;
+@media only screen and (max-width: 1200px)	{
+	#learn-something	{
+		height: 35rem;
+		
 	}
 	
-	#learn-something .button	{
-		margin: .25rem auto;
-		height: 2.5rem;
-		font-size: 1.2rem;
+	#learn-something .content	{
+		top: 10rem;
+	}
+	
+	.sect-title, .sect-content	{
+		margin-bottom: 1rem;
+	}
+}
+
+@media only screen and (max-width: 900px)	{
+	#learn-something .content	{
+	font-size: 1rem;
+	}
+}
+
+@media only screen and (max-width: 750px)	{
+	#learn-something .content .sect-title	{
+		font-size: 225%;
+	}
+	
+	#learn-something .content .sect-content	{
+		font-size: 130%;
+	}
+	
+	.sect-title, .sect-content	{
+		margin-bottom: .5rem;
 	}
 }
 
 @media only screen and (max-width: 600px)	{
-	#learn-something	{
-		flex-direction: column;
-		width: 100%;
+	#learn-something 	{
+		background-image: none;
+		height: 100%;
 	}
-	
 	#learn-something .content	{
-		width: 85%;
-		margin:2rem 1rem;
+		flex-direction: column;
+		border-radius: initial;
+		position: initial;
+		width: 100%;
+		height: 100%;
 	}
 	
-	.pic-format	{
+	.mini-pic	{
 		width: 100%;
+	}
+	
+	#learn-something .content .sect-title	{
+		font-size: 190%;
+	}
+	
+	#learn-something .content .sect-content	{
+		font-size: 100%;
+		margin:
+	}
+	
+	.button	{
+		height: 2rem;
+		width: 90%;
 	}
 }
 
 /* ...Keep Practicing */
 #practicing	{
-	background-color: white;
 	display: flex;
-	width: 100%;
+		justify-content: space-around;
+	width: 80%;
+	border-bottom: .15rem solid rgb(232,208,0);
+	margin: 0 auto;
 }
 
 .main-art	{
@@ -296,26 +475,29 @@ header nav ul li 	{
 .main-art p	{
 	margin: .25rem 0 2rem;
 	line-height: 1.25rem;
-	color: darkgray;
 	width: 90%;
 }
 
 .side-art	{
-	width: 40%;
+	width: 35%;
+		max-width: 500px;
+	height: 29rem;
 	display: flex;
 		flex-direction: column;
+		justify-content: space-between;
 	margin-top: 2rem;
+	
 }
 
 .sub-art	{
 	width: 90%;
-	border: .075rem solid lightgray;
+	border: .1rem solid rgb(0,0,110);
 	display: flex;
 		align-items: center;
 }
 
 	.sub-art:hover	{
-		background-color: lightgray;
+		background-color: rgba(232,208,0,.25);
 		
 	}
 
@@ -331,24 +513,26 @@ header nav ul li 	{
 
 	.sub-art-pic	{
 		width: 35%;
-			max-width: 175px;
+			max-width: 125px;
 		height: auto;
 		margin: 1rem 1rem;
 	}
 
 	.sub-art-title	{
 		margin-bottom: .5rem;
-		
+		color: rgb(0,0,110);
 	}
 
 	.sub-art-desc	{
 		margin-bottom: .5rem;
 		line-height: 1.125rem;
+		color: slategray;
 	}
 
 .mini-pic	{
 	display: none;
 }
+
 @media only screen and (max-width: 1250px)	{
 
 }
@@ -359,16 +543,18 @@ header nav ul li 	{
 	}
 	.main-art	{
 		width: 90%;
+		margin: 0 auto;
 	}
 	
 	.side-art	{
-		width: 90%;
+		width: 100%;
+		height: 100%;
 		flex-direction: row;
-		margin: 0 auto 2rem;
+		margin: 2rem auto;
 	}
 	
 	.sub-art	{
-		width: 90%;
+		width: 33%;
 		flex-direction: column;
 		margin: 0 auto;
 		align-items: flex-start;
@@ -377,7 +563,7 @@ header nav ul li 	{
 	.sub-art-pic, .sub-art-content	{
 		width: 90%;
 		max-width: none;
-		margin: 0 auto .25rem;
+		margin: 0 auto 1.25rem;
 	}
 	
 	.small-hide	{
@@ -393,9 +579,8 @@ header nav ul li 	{
 
 @media only screen and (max-width: 600px)	{
 	#practicing	{
-		background-color: white;
-		border-top: .025rem lightgray solid;
-		border-bottom: .025rem lightgray solid;
+		border-top: .025rem whitesmoke solid;
+		border-bottom: .025rem whitesmoke solid;
 	}
 	
 	.main-art	{
@@ -404,17 +589,24 @@ header nav ul li 	{
 	
 	.side-art	{
 		width: 100%;
-		align-items: center;
-		margin: .25rem auto;
+		margin: 3.25rem auto;
+		height: 100%;
+		justify-content: space-around;
 	}
 	
 	.sub-art	{
 		border: none;
-		width: 100%;
+		width: 30%;
 		flex-direction: column;
 		align-items: center;
 		margin: 0 ;
 	}
+	
+	.sub-art-title	{
+		font-size: 200%;
+	}
+	
+
 	
 	.sub-art-pic, .sub-art-content	{
 		width: 90%;
@@ -433,9 +625,11 @@ header nav ul li 	{
 
 /* Start Learning */
 #start-learning	{
-	background-color: lightgray;
+	width: 80%;
+	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
+	border-bottom: .15rem solid rgb(232,208,0);
 }
 
 #start-learning .sect-title	{
@@ -452,11 +646,12 @@ header nav ul li 	{
 }
 
 .program	{
-	background-color: white;
-	border: .25rem solid lightgray;
+	background-color: rgba(0,0,70,.65);	
+	border: .25rem solid white;
 	margin: 1rem 1rem;
 	height: 25rem;
-	width: 25rem;
+	width: 27%;
+	min-width: 250px;
 }
 
 .program img {
@@ -465,7 +660,7 @@ header nav ul li 	{
 }
 
 .program:hover	{
-	border: .25rem solid gray;
+	border: .25rem solid rgb(232,208,0);
 }
 
 .program-courses	{
@@ -483,18 +678,18 @@ header nav ul li 	{
 
 @media only screen and (max-width: 1000px)	{
 .program	{
-	background-color: white;
-	border: .25rem solid lightgray;
+	border: .25rem solid whitesmoke;
 	margin: 1rem 1rem;
 	height: 20rem;
 	width: 15rem;
+	}
 }
-}
+
 @media only screen and (max-width: 600px)	{
 	#start-learning	{
-		background-color: white;
-		border-top: .025rem lightgray solid;
-		border-bottom: .025rem lightgray solid;
+		background-color: whitesmoke;
+		border-top: .025rem whitesmoke solid;
+		border-bottom: .025rem whitesmoke solid;
 	}
 	.program	{
 		display: none;
@@ -512,17 +707,21 @@ header nav ul li 	{
 		padding: 1.1rem 1rem;
 		margin: .25rem auto;
 		border-radius: 5px;
-		background-color: lightgray;
+		background-color: rgba(0,0,70,.65);	
 	}
+	
+	
 }
 
 /* Thesis Exhibit */
 #theses	{
-	background-color: white;
 	display: flex;
 		flex-direction: column;
 		align-items: center;
-	width: 100%;
+		justify-content: space-around;
+		
+	width: 80%;
+	margin: 0 auto;
 }
 
 #theses .sect-title	{
@@ -536,6 +735,7 @@ header nav ul li 	{
 
 .theses-content .side-art	{
 	margin-top:1rem;
+	height: 23rem;
 }
 video.vid-format	{
 	width: 100%;
